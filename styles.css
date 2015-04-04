@@ -2,6 +2,12 @@ header, main, footer, .break{
   width: 900px;
   margin: 0 auto;
 }
+main{
+  margin-bottom: 50px;
+}
+.hidden{
+  display: none;
+}
 .headlogo{
   background: url('imgs/mastersprite.png') 0px 45px;
   height:45px;
