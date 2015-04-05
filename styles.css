@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
 header, main, footer, .break{
   width: 900px;
   margin: 0 auto;
@@ -82,7 +84,6 @@ main{
 }
 article{
   background: url('imgs/list-bg.png') no-repeat;
-  font: 400 4em/125% 'Shadows Into Light Two', Helvetica, Sans-serif;
   line-height: .125em;
   height:350px;
   width: 900px;
@@ -106,6 +107,7 @@ article li{
   text-decoration: line-through;
 }
 .chk {
+  font-family: 'Shadows Into Light', cursive;
   display: inline-block;
   cursor: pointer;
   font-size: 16px;
