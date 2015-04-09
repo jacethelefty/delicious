@@ -9,6 +9,8 @@
 
         <link rel="stylesheet" href="normalize.css">
 
+        <link rel="stylesheet" href="skeleton.css">
+
         <link rel="stylesheet" href="styles.css"/>
 
         <script src="js/modernizr.js"></script>
@@ -20,21 +22,29 @@
         <![endif]-->
 
         <header>
-          <div class="headlogo"></div>
-          <h1>Delicious</h1>
-          <h2>THE BEST FOOD BLOG ON THE WEB</h2>
-          <nav class="right">
-            <ul class="navlist">
-              <a href="facebook.com"><li class="soc_fb"></li></a>
-              <a href="twitter.com"><li class="soc_tw"></li></a>
-              <a href="googleplus.com"><li class="soc_gg"></li></a>
-              <a href="instagram.com"><li class="soc_in"></li></a>
-              <a href="flickr.com"><li class="soc_fl"></li></a>
-              <a href="pinterest.com"><li class="soc_pi"></li></a>
-              <a href="blogger.com"><li class="soc_rs"></li></a>
-              <a href="mailto:vanessa@delicious.com?Subject=I%20love%20your%20recipes" target="_top"><li class="soc_em"></li></a>
-            </ul>
-          </nav>
+          <div class="container">
+            <div class="row">
+              <div class="twelve.columns logoarea">
+                <div class="headlogo"></div>
+                <h1>Delicious</h1>
+                <h2>THE BEST FOOD BLOG ON THE WEB</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="twelve.columns">
+                <nav class="navlist">
+                    <a href="facebook.com" class="soc_fb"></a>
+                    <a href="twitter.com" class="soc_tw"></a>
+                    <a href="googleplus.com" class="soc_gg"></a>
+                    <a href="instagram.com" class="soc_in"></a>
+                    <a href="flickr.com" class="soc_fl"></a>
+                    <a href="pinterest.com" class="soc_pi"></a>
+                    <a href="blogger.com" class="soc_rs"></a>
+                    <a href="mailto:vanessa@delicious.com?Subject=I%20love%20your%20recipes" target="_top" class="soc_em"></a>
+                </nav>
+              </div>
+            </div>
+          </div>
         </header>
 
         <main>
@@ -42,7 +52,7 @@
             <h1>Chocolate Pizza</h1>
             <h2>POSTED ON 15 DEC 2013 / DESSERTS</h2>
 
-            <p class="right print" onclick="printFunction()"><img src="imgs/print.png" alt="print"> PRINT</p>
+            <p class="right print" id="print"><img src="imgs/print.png" alt="print"> PRINT</p>
 
             <img src="imgs/chocopizza.jpg" alt="chocolate pizza" class="mainpic">
 
@@ -56,7 +66,7 @@
 
             <section class="ingredback">
               <h2 class="hidden">Ingredients</h2>
-              <form class="left listleft">
+              <form class="listleft left">
                 <input id="Option" type="checkbox" autocomplete="off"><label class="chk" for="Option">1 1/2 cups milk</label>
                 <input id="Option2" type="checkbox" autocomplete="off"><label class="chk" for="Option2">1/2 cup mascarpone</label>
                 <input id="Option3" type="checkbox" autocomplete="off"><label class="chk" for="Option3">1/2 tsp pink salt</label>
@@ -64,7 +74,7 @@
                 <input id="Option5" type="checkbox" autocomplete="off"><label class="chk" for="Option5">1/2 cup brown sugar</label>
                 <input id="Option6" type="checkbox" autocomplete="off"><label class="chk" for="Option6">2-4 tbsp water</label>
               </form>
-              <form class="right listright">
+              <form class="listright right">
                 <input id="Option7" type="checkbox" autocomplete="off"><label class="chk" for="Option7">1 1/2 cups heavy cream</label>
                 <input id="Option8" type="checkbox" autocomplete="off"><label class="chk" for="Option8">1/3 cup granulated sugar</label>
                 <input id="Option9" type="checkbox" autocomplete="off"><label class="chk" for="Option9">2 egg yolks</label>
@@ -74,11 +84,11 @@
               </form>
             </section>
 
-            <aside>
+            <aside class="author_notes">
               <img src="imgs/headshot.png" alt="vanessa headshot" class="left headshot">
               <h3>Vanessa Stevenson</h3>
               <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
-              <a href="#"><p class="share right">SHARE RECIPE</p></a>
+              <p class="share">SHARE RECIPE</p>
             </aside>
           </article>
         </main>
