@@ -113,7 +113,7 @@ h2{
 }
 .soc_rs{
   background: url('imgs/mastersprite.png') -144px 0;
-  margin-left: 14px;
+  margin-left: 10px;
 }
 .soc_em{
   background: url('imgs/mastersprite.png') -168px 0;
@@ -246,7 +246,7 @@ aside{
   border-image: url(imgs/break.png) 13 0 0 fill repeat;
 }
 .headshot{
-  margin: 30px 24px;
+  margin: 40px 24px 70px;
 }
 h3, aside p{
   color: rgba(0,0,0,0.4);
@@ -269,7 +269,7 @@ h3{
   width: 106px;
   font-weight: 200;
   text-decoration: none;
-  margin: 40px auto;
+  margin: 40px auto 60px;
   cursor: pointer;
 }
 .share:hover{
@@ -295,4 +295,57 @@ footer p{
 }
 footer p:last-of-type{
   margin-bottom: 60px;
+}
+
+@media (min-width: 550px) {
+  .logoarea{
+    float: left;
+  }
+  .headlogo{
+    margin: 32px 12px 0 0;
+  }
+  .navlist{
+    float: right;
+    margin: 30px -26px;
+  }
+  .listleft{
+    float: left;
+    margin: 36px 0 0 40px;
+    width: 45%;
+  }
+  .listright{
+    margin: 38px 0 0 0;
+    width: 100%;
+  }
+  .listleft label, .listright label{
+  display: block;
+  font-size: 1.45em;
+  line-height: 1.35em;
+  }
+  .listright label:last-of-type {
+  width: 100%;
+  }
+  .push{
+    margin-left:20px;
+  }
+  header{
+    padding-bottom: 100px;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .bodyp p {
+    max-width: 100%;
+  }
+  .share{
+    float: right;
+    margin-top: -55px;
+  }
+  aside p{
+    width: 70%;
+  }
+  aside{
+    padding-bottom: 20px;
+  }
 }
