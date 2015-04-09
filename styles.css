@@ -297,7 +297,7 @@ footer p:last-of-type{
   margin-bottom: 60px;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 450px) {
   .logoarea{
     float: left;
   }
