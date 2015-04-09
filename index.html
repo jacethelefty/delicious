@@ -3,14 +3,15 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>My Fancy HTML5 Boilerplate</title>
+        <title>Delicious - Food Blog</title>
         <meta name="description" content="a blog about food">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css"/>
-        <script src="js/modernizr.js"></script>
 
-        <!-- ===================IMPORT GOOGLE FONTS======================-->
-        <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="normalize.css">
+
+        <link rel="stylesheet" href="styles.css"/>
+
+        <script src="js/modernizr.js"></script>
 
     </head>
     <body>
@@ -24,18 +25,16 @@
           <h2>THE BEST FOOD BLOG ON THE WEB</h2>
           <nav class="right">
             <ul class="navlist">
-              <li class="soc_fb"></li>
-              <li class="soc_tw"></li>
-              <li class="soc_gg"></li>
-              <li class="soc_in"></li>
-              <li class="soc_fl"></li>
-              <li class="soc_pi"></li>
-              <li class="soc_rs"></li>
-              <li class="soc_em"></li>
+              <a href="facebook.com"><li class="soc_fb"></li></a>
+              <a href="twitter.com"><li class="soc_tw"></li></a>
+              <a href="googleplus.com"><li class="soc_gg"></li></a>
+              <a href="instagram.com"><li class="soc_in"></li></a>
+              <a href="flickr.com"><li class="soc_fl"></li></a>
+              <a href="pinterest.com"><li class="soc_pi"></li></a>
+              <a href="blogger.com"><li class="soc_rs"></li></a>
+              <a href="mailto:vanessa@delicious.com?Subject=I%20love%20your%20recipes" target="_top"><li class="soc_em"></li></a>
             </ul>
           </nav>
-
-          <div class="break"></div>
         </header>
 
         <main>
@@ -43,17 +42,19 @@
             <h1>Chocolate Pizza</h1>
             <h2>POSTED ON 15 DEC 2013 / DESSERTS</h2>
 
-            <p class="right print"><img src="imgs/print.png" alt="print"> PRINT</p>
+            <p class="right print" onclick="printFunction()"><img src="imgs/print.png" alt="print"> PRINT</p>
 
             <img src="imgs/chocopizza.jpg" alt="chocolate pizza" class="mainpic">
 
+            <section class="bodyp">
             <p>Bacon ipsum dolor amet salami tenderloin meatball bresaola, porchetta spare ribs short loin meatloaf brisket kevin landjaeger tri-tip t-bone. Turducken beef ribs drumstick, hamburger frankfurter short loin tongue brisket. Short loin ham hock ham sirloin pork ribeye chuck shankle. Shoulder biltong spare ribs pig venison short loin filet mignon tri-tip pork chop beef tenderloin. Landjaeger picanha fatback, chuck t-bone pancetta andouille pork belly ribeye tenderloin ball tip. Pork loin sirloin leberkas capicola tenderloin pork kevin rump.</p>
 
             <p>Short loin pastrami pork belly meatball ham ball tip porchetta shoulder. Cupim turducken hamburger, andouille filet mignon tongue short loin corned beef pancetta. Pork belly spare ribs cow kevin, tongue short ribs chuck jowl capicola sausage corned beef doner shank. Tongue sirloin prosciutto short ribs cupim pastrami. Meatloaf ham pork alcatra capicola landjaeger. Tail chuck flank ham hock cupim shankle leberkas.</p>
 
             <p>Pancetta turducken fatback cupim alcatra corned beef, ribeye pig tongue ham hock sirloin flank. Alcatra sausage doner spare ribs, turducken venison tri-tip meatloaf ham hock. Frankfurter alcatra pork belly picanha, spare ribs ball tip jowl beef ribs short ribs chuck hamburger turkey venison ribeye. Leberkas turducken venison, rump meatloaf strip steak ball tip chuck chicken kielbasa flank pig ribeye pork chop.</p>
+            </section>
 
-            <div class="ingredback">
+            <section class="ingredback">
               <h2 class="hidden">Ingredients</h2>
               <form class="left listleft">
                 <input id="Option" type="checkbox" autocomplete="off"><label class="chk" for="Option">1 1/2 cups milk</label>
@@ -69,21 +70,21 @@
                 <input id="Option9" type="checkbox" autocomplete="off"><label class="chk" for="Option9">2 egg yolks</label>
                 <input id="Option10" type="checkbox" autocomplete="off"><label class="chk" for="Option10">1 lemon, juiced</label>
                 <input id="Option11" type="checkbox" autocomplete="off"><label class="chk" for="Option11">2 tbsp butter</label>
-                <input id="Option12" type="checkbox" autocomplete="off"><label class="chk" for="Option12">1 cup honey roasted pecan, roughly chopped</label>
+                <input id="Option12" type="checkbox" autocomplete="off"><label class="chk" for="Option12">1 cup honey roasted pecans, <span class="push">roughly chopped</span></label>
               </form>
-            </div>
+            </section>
+
+            <aside>
+              <img src="imgs/headshot.png" alt="vanessa headshot" class="left headshot">
+              <h3>Vanessa Stevenson</h3>
+              <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
+              <a href="#"><p class="share right">SHARE RECIPE</p></a>
+            </aside>
           </article>
-          <div class="break"></div>
-          <aside>
-            <img src="imgs/headshot.png" alt="vanessa headshot" class="left headshot">
-            <h3>Vanessa Stevenson</h3>
-            <p class="sharep">Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
-          </aside>
-          <a href="#"><div class="share right"><p>SHARE RECIPE</p></div></a>
         </main>
 
         <footer>
-          <h2 class="hidden">Footer</h2><div class="footlogo footimg"></div>
+          <h2 class="hidden">Footer</h2><div class="footlogo"></div>
           <p>Delicious &copy 2013 &middot All Rights Reserved.</p>
           <p>Proudly published with Ghost.</p>
         </footer>
@@ -91,7 +92,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 
-        <!--<script src="js/app.js"></script>-->
+        <script src="js/app.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
