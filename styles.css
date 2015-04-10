@@ -118,23 +118,23 @@ h2{
 .soc_em{
   background: url('imgs/mastersprite.png') -168px 0;
 }
-h1, .posttag, .print{
+h1, .print{
   font-family: "Helvetica", sans-serif;
 }
 h1{
-  margin-top: 30px;
+  margin: 30px 0 0 2px;
   font-family: 'oswaldbold';
   font-size: 2.5em;
 }
 article h2{
-  margin: -22px 0 40px 0;
+  margin: 0px 0 40px 4px;
   font-size: 14px;
   color: rgba(0,0,0,0.4);
 }
 .print{
   font-size: 10px;
   font-weight: 200;
-  margin: -55px 0 40px 0;
+  margin: -55px 6px 40px 0;
   color: rgba(0,0,0,0.2);
   cursor: pointer;
 }
@@ -341,6 +341,9 @@ footer p:last-of-type{
   .share{
     float: right;
     margin-top: -55px;
+  }
+  article h1, article h2{
+    margin-left: 0px;
   }
   aside p{
     width: 70%;
