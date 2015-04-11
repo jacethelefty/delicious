@@ -79,7 +79,7 @@ header, main, footer{
   max-width: 900px;
   margin: 0 auto;
 }
-header h1, .logoarea, .listleft label, .listright label, .listleft, .footlogo {
+header h1, .logoarea, .listleft label, .listright label, .listleft, .share, .footlogo {
   display: block;
 }
 .soclist a, .chk, .chk:before {
