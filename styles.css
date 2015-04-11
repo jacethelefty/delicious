@@ -1,3 +1,7 @@
+/*
+* Copyright 2015, Jason Montoya
+* codefellows web UI/UX
+*/
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 - Import Fonts
@@ -21,7 +25,8 @@
          url('fonts/Yellowtail-Regular-webfont.ttf') format('truetype'),
          url('fonts/Yellowtail-Regular-webfont.svg#yellowtailregular') format('svg');
     font-weight: normal;
-    font-style: normal;}
+    font-style: normal;
+  }
 @font-face {
     font-family: 'oswaldbold';
     src: url('fonts/Oswald-Bold-webfont.eot');
@@ -31,7 +36,8 @@
          url('fonts/Oswald-Bold-webfont.ttf') format('truetype'),
          url('fonts/Oswald-Bold-webfont.svg#oswaldbold') format('svg');
     font-weight: normal;
-    font-style: normal;}
+    font-style: normal;
+  }
 @font-face {
     font-family: 'patrick_handregular';
     src: url('fonts/PatrickHand-Regular-webfont.eot');
@@ -41,8 +47,8 @@
          url('fonts/PatrickHand-Regular-webfont.ttf') format('truetype'),
          url('fonts/PatrickHand-Regular-webfont.svg#patrick_handregular') format('svg');
     font-weight: normal;
-    font-style: normal;}
-
+    font-style: normal;
+  }
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1{
