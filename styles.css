@@ -112,11 +112,20 @@ article h2{
   font-family: "Helvetica", sans-serif;
   font-size: 10px;
   font-weight: 200;
-  margin: -15px 6px 40px 0;
+  margin: -14px 6px 40px 0;
   color: rgba(0,0,0,0.2);
 }
 .print:hover{
   color:#00A632;
+}
+.print:before{
+  background:url('imgs/print.png');
+  width: 10px;
+  height: 10px;
+  display:block;
+  content:'';
+  position: absolute;
+  right: 37px;
 }
 .bodyp p {
   text-indent: 30px;
