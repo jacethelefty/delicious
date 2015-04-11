@@ -8,10 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="normalize.css">
-
+        <link rel="stylesheet" href="skeleton.css">
         <link rel="stylesheet" href="styles.css"/>
 
         <script src="js/modernizr.js"></script>
+
+        <link rel="icon" type="image/png" href="imgs/favicon.png">
 
     </head>
     <body>
@@ -20,74 +22,108 @@
         <![endif]-->
 
         <header>
-          <div class="headlogo"></div>
-          <h1>Delicious</h1>
-          <h2>THE BEST FOOD BLOG ON THE WEB</h2>
-          <nav class="right">
-            <ul class="navlist">
-              <a href="facebook.com"><li class="soc_fb"></li></a>
-              <a href="twitter.com"><li class="soc_tw"></li></a>
-              <a href="googleplus.com"><li class="soc_gg"></li></a>
-              <a href="instagram.com"><li class="soc_in"></li></a>
-              <a href="flickr.com"><li class="soc_fl"></li></a>
-              <a href="pinterest.com"><li class="soc_pi"></li></a>
-              <a href="blogger.com"><li class="soc_rs"></li></a>
-              <a href="mailto:vanessa@delicious.com?Subject=I%20love%20your%20recipes" target="_top"><li class="soc_em"></li></a>
-            </ul>
-          </nav>
+          <div class="container">
+            <div class="row">
+              <div class="eight columns logoarea">
+                <div class="headlogo left"></div>
+                <h1>Delicious</h1>
+                <h2>THE BEST FOOD BLOG ON THE WEB</h2>
+              </div>    <!--END eight.col-->
+              <div class="four columns">
+                <nav class="soclist">
+                    <a href="facebook.com" class="soc_fb"></a>
+                    <a href="twitter.com" class="soc_tw"></a>
+                    <a href="googleplus.com" class="soc_gg"></a>
+                    <a href="instagram.com" class="soc_in"></a>
+                    <a href="flickr.com" class="soc_fl"></a>
+                    <a href="pinterest.com" class="soc_pi"></a>
+                    <a href="blogger.com" class="soc_rs"></a>
+                    <a href="mailto:vanessa@delicious.com?Subject=I%20love%20your%20recipes" target="_top" class="soc_em"></a>
+                </nav>
+              </div>    <!--END four.col-->
+            </div>      <!--END row-->
+          </div>        <!--END container-->
         </header>
 
         <main>
           <article>
-            <h1>Chocolate Pizza</h1>
-            <h2>POSTED ON 15 DEC 2013 / DESSERTS</h2>
+            <div class="container">
+              <div class="row">
+                <div class="six columns">
+                  <h1>Chocolate Pizza</h1>
+                  <h2>POSTED ON 15 DEC 2013 / DESSERTS</h2>
+                </div>    <!--END six.col-->
+                <div class="six columns">
+                  <p class="right print" id="print"> PRINT</p>
+                </div>    <!--END six.col-->
+              </div>      <!--END row-->
+              <div class="row">
+                <div class="twelve columns">
+                  <img src="imgs/chocopizza.jpg" alt="chocolate pizza" class="mainpic">
+                </div>    <!--END twelve.col-->
+              </div>      <!--END row-->
+              <div class="row">
+                <div class="twelve columns">
+                  <section class="bodyp">
+                    <p>Bacon ipsum dolor amet salami tenderloin meatball bresaola, porchetta spare ribs short loin meatloaf brisket kevin landjaeger tri-tip t-bone. Turducken beef ribs drumstick, hamburger frankfurter short loin tongue brisket. Short loin ham hock ham sirloin pork ribeye chuck shankle. Shoulder biltong spare ribs pig venison short loin filet mignon tri-tip pork chop beef tenderloin. Landjaeger picanha fatback, chuck t-bone pancetta andouille pork belly ribeye tenderloin ball tip. Pork loin sirloin leberkas capicola tenderloin pork kevin rump.</p>
 
-            <p class="right print" onclick="printFunction()"><img src="imgs/print.png" alt="print"> PRINT</p>
+                    <p>Short loin pastrami pork belly meatball ham ball tip porchetta shoulder. Cupim turducken hamburger, andouille filet mignon tongue short loin corned beef pancetta. Pork belly spare ribs cow kevin, tongue short ribs chuck jowl capicola sausage corned beef doner shank. Tongue sirloin prosciutto short ribs cupim pastrami. Meatloaf ham pork alcatra capicola landjaeger. Tail chuck flank ham hock cupim shankle leberkas.</p>
 
-            <img src="imgs/chocopizza.jpg" alt="chocolate pizza" class="mainpic">
+                    <p>Pancetta turducken fatback cupim alcatra corned beef, ribeye pig tongue ham hock sirloin flank. Alcatra sausage doner spare ribs, turducken venison tri-tip meatloaf ham hock. Frankfurter alcatra pork belly picanha, spare ribs ball tip jowl beef ribs short ribs chuck hamburger turkey venison ribeye. Leberkas turducken venison, rump meatloaf strip steak ball tip chuck chicken kielbasa flank pig ribeye pork chop.</p>
+                  </section>
+                </div>    <!--END twelve.col-->
+              </div>      <!--END row-->
+              <div class="row">
+                <div class="twelve columns">
+                  <section class="ingredback">
+                    <h2 class="hidden">Ingredients</h2>
+                    <form class="listleft">
+                      <input id="Option" type="checkbox" autocomplete="off"><label class="chk" for="Option">1 1/2 cups milk</label>
+                      <input id="Option2" type="checkbox" autocomplete="off"><label class="chk" for="Option2">1/2 cup mascarpone</label>
+                      <input id="Option3" type="checkbox" autocomplete="off"><label class="chk" for="Option3">1/2 tsp pink salt</label>
+                      <input id="Option4" type="checkbox" autocomplete="off"><label class="chk" for="Option4">1 lb Black Mission figs</label>
+                      <input id="Option5" type="checkbox" autocomplete="off"><label class="chk" for="Option5">1/2 cup brown sugar</label>
+                      <input id="Option6" type="checkbox" autocomplete="off"><label class="chk" for="Option6">2-4 tbsp water</label>
+                    </form>
+                    <form class="listright">
+                      <input id="Option7" type="checkbox" autocomplete="off"><label class="chk" for="Option7">1 1/2 cups heavy cream</label>
+                      <input id="Option8" type="checkbox" autocomplete="off"><label class="chk" for="Option8">1/3 cup granulated sugar</label>
+                      <input id="Option9" type="checkbox" autocomplete="off"><label class="chk" for="Option9">2 egg yolks</label>
+                      <input id="Option10" type="checkbox" autocomplete="off"><label class="chk" for="Option10">1 lemon, juiced</label>
+                      <input id="Option11" type="checkbox" autocomplete="off"><label class="chk" for="Option11">2 tbsp butter</label>
+                      <input id="Option12" type="checkbox" autocomplete="off"><label class="chk" for="Option12">1 cup honey roasted pecans, roughly chopped</label>
+                    </form>
+                  </section>
+                </div>    <!--END twelve.col-->
+              </div>      <!--END row-->
+            </div>        <!--END container-->
 
-            <section class="bodyp">
-            <p>Bacon ipsum dolor amet salami tenderloin meatball bresaola, porchetta spare ribs short loin meatloaf brisket kevin landjaeger tri-tip t-bone. Turducken beef ribs drumstick, hamburger frankfurter short loin tongue brisket. Short loin ham hock ham sirloin pork ribeye chuck shankle. Shoulder biltong spare ribs pig venison short loin filet mignon tri-tip pork chop beef tenderloin. Landjaeger picanha fatback, chuck t-bone pancetta andouille pork belly ribeye tenderloin ball tip. Pork loin sirloin leberkas capicola tenderloin pork kevin rump.</p>
-
-            <p>Short loin pastrami pork belly meatball ham ball tip porchetta shoulder. Cupim turducken hamburger, andouille filet mignon tongue short loin corned beef pancetta. Pork belly spare ribs cow kevin, tongue short ribs chuck jowl capicola sausage corned beef doner shank. Tongue sirloin prosciutto short ribs cupim pastrami. Meatloaf ham pork alcatra capicola landjaeger. Tail chuck flank ham hock cupim shankle leberkas.</p>
-
-            <p>Pancetta turducken fatback cupim alcatra corned beef, ribeye pig tongue ham hock sirloin flank. Alcatra sausage doner spare ribs, turducken venison tri-tip meatloaf ham hock. Frankfurter alcatra pork belly picanha, spare ribs ball tip jowl beef ribs short ribs chuck hamburger turkey venison ribeye. Leberkas turducken venison, rump meatloaf strip steak ball tip chuck chicken kielbasa flank pig ribeye pork chop.</p>
-            </section>
-
-            <section class="ingredback">
-              <h2 class="hidden">Ingredients</h2>
-              <form class="left listleft">
-                <input id="Option" type="checkbox" autocomplete="off"><label class="chk" for="Option">1 1/2 cups milk</label>
-                <input id="Option2" type="checkbox" autocomplete="off"><label class="chk" for="Option2">1/2 cup mascarpone</label>
-                <input id="Option3" type="checkbox" autocomplete="off"><label class="chk" for="Option3">1/2 tsp pink salt</label>
-                <input id="Option4" type="checkbox" autocomplete="off"><label class="chk" for="Option4">1 lb Black Mission figs</label>
-                <input id="Option5" type="checkbox" autocomplete="off"><label class="chk" for="Option5">1/2 cup brown sugar</label>
-                <input id="Option6" type="checkbox" autocomplete="off"><label class="chk" for="Option6">2-4 tbsp water</label>
-              </form>
-              <form class="right listright">
-                <input id="Option7" type="checkbox" autocomplete="off"><label class="chk" for="Option7">1 1/2 cups heavy cream</label>
-                <input id="Option8" type="checkbox" autocomplete="off"><label class="chk" for="Option8">1/3 cup granulated sugar</label>
-                <input id="Option9" type="checkbox" autocomplete="off"><label class="chk" for="Option9">2 egg yolks</label>
-                <input id="Option10" type="checkbox" autocomplete="off"><label class="chk" for="Option10">1 lemon, juiced</label>
-                <input id="Option11" type="checkbox" autocomplete="off"><label class="chk" for="Option11">2 tbsp butter</label>
-                <input id="Option12" type="checkbox" autocomplete="off"><label class="chk" for="Option12">1 cup honey roasted pecans, <span class="push">roughly chopped</span></label>
-              </form>
-            </section>
-
-            <aside>
-              <img src="imgs/headshot.png" alt="vanessa headshot" class="left headshot">
-              <h3>Vanessa Stevenson</h3>
-              <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
-              <a href="#"><p class="share right">SHARE RECIPE</p></a>
-            </aside>
+            <div class="container">
+              <div class="row">
+                <div class="twelve columns">
+                  <aside class="author_notes">
+                    <img src="imgs/headshot.png" alt="vanessa headshot" class="left headshot">
+                    <h3>Vanessa Stevenson</h3>
+                    <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
+                    <a href="#" class="share">SHARE RECIPE</a>
+                  </aside>
+                </div>    <!--END twelve.col-->
+              </div>      <!--END row-->
+            </div>        <!--END container-->
           </article>
         </main>
 
-        <footer>
-          <h2 class="hidden">Footer</h2><div class="footlogo"></div>
-          <p>Delicious &copy 2013 &middot All Rights Reserved.</p>
-          <p>Proudly published with Ghost.</p>
-        </footer>
+        <div class="container">
+          <div class="row">
+            <div class="twelve columns">
+              <footer>
+                <h2 class="hidden">Footer</h2><div class="footlogo"></div>
+                <p>Delicious &copy 2013 &middot All Rights Reserved.</p>
+                <p>Proudly published with Ghost.</p>
+              </footer>
+            </div>    <!--END twelve.col-->
+          </div>      <!--END row-->
+        </div>        <!--END footer container-->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
