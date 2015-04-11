@@ -342,8 +342,8 @@ footer{
   }
   .listleft{
     float: left;
-    margin: 36px 0 0 40px;
-    width: 45%;
+    margin: 36px 0 0 14%;
+    width: 40%;
   }
   .listright{
     margin: 38px 0 0 0;
