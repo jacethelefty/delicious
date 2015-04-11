@@ -124,6 +124,7 @@ article h2{
   color:rgba(0,0,0,0.5);
   max-width: 86%;
   margin: 20px auto;
+  text-align: justify;
 }
 .bodyp p:nth-of-type(1){
   margin-top: 40px;
