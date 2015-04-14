@@ -301,8 +301,11 @@ aside{
 }
 /* FOOTER AREA
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.pageFooter, footer p{
+  color: rgba(0,0,0,0.2);
+}
 .pageFooter{
-  border-top: 1px solid rgba(0,0,0,0.2);
+  border-top: 1px solid;
 }
 .footlogo{
   background: url('imgs/mastersprite.png') -42px 45px;
@@ -313,7 +316,6 @@ aside{
 }
 footer p{
   line-height: .25em;
-  color: rgba(0,0,0,0.2);
 }
 footer p:last-of-type{
   margin-bottom: 60px;
