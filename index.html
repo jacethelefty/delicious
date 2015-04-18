@@ -8,9 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="skeleton.css">
-        <link rel="stylesheet" href="styles.css"/>
-        <link rel="stylesheet" href="icons/icon.css">
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="modules.css">
+        <link rel="stylesheet" href="theme.css">
+        <link rel="stylesheet" href="states.css">
+        <!-- <link rel="stylesheet" href="styles.css"> -->
 
         <script src="js/modernizr.js"></script>
 
@@ -27,42 +31,42 @@
         <![endif]-->
 
         <header class="pageHeader container">
-            <div class="row">
-              <div class="eight columns logoarea">
+            <div class="row box">
+              <div class="twelve columns logoarea">
                 <div class="headlogo left"></div>
-                <h1>Delicious</h1>
-                <h2>THE BEST FOOD BLOG ON THE WEB</h2>
+                <h1 class="block size-48">Delicious</h1>
+                <h2 class="size-10">THE BEST FOOD BLOG ON THE WEB</h2>
               </div>    <!--END eight.col-->
-              <div class="four columns">
-                <nav class="soclist">
-                    <a href="facebook.com" class="soc_fb">
+              <div class="twelve columns">
+                <nav class="soclist point size-12 right">
+                    <a href="facebook.com" class="soc_fb inblock">
                       <span class="icon-facebook">
                       </span>
                     </a>
-                    <a href="twitter.com" class="soc_tw">
+                    <a href="twitter.com" class="soc_tw inblock">
                       <span class="icon-twitter">
                       </span>
                     </a>
-                    <a href="googleplus.com" class="soc_gg">
+                    <a href="googleplus.com" class="soc_gg inblock">
                       <span class="icon-google-plus">
                       </span>
                     </a>
-                    <a href="instagram.com" class="soc_in">
+                    <a href="instagram.com" class="soc_in inblock">
                       <span class="icon-instagram">
                       </span>
                     </a>
-                    <a href="flickr.com" class="soc_fl">
+                    <a href="flickr.com" class="soc_fl inblock">
                       <span class="icon-flickr3">
                       </span>
                     </a>
-                    <a href="pinterest.com" class="soc_pi">
+                    <a href="pinterest.com" class="soc_pi inblock">
                       <span class="icon-pinterest2">
                       </span>                    </a>
-                    <a href="blogger.com" class="soc_rs">
+                    <a href="blogger.com" class="soc_rs inblock">
                         <span class="icon-feed2">
                       </span>
                     </a>
-                    <a href="mailto:vanessa@delicious.com?Subject=I%20love%20your%20recipes" target="_top" class="soc_em">
+                    <a href="mailto:vanessa@delicious.com?Subject=I%20love%20your%20recipes" target="_top" class="soc_em inblock">
                       <span class="icon-envelop">
                       </span>
                     </a>
@@ -74,12 +78,12 @@
         <main class="mainbody container">
           <article class="mainarticle container">
             <div class="row">
-              <div class="six columns">
-                <h1>Chocolate Pizza</h1>
-                <h2>POSTED ON 15 DEC 2013 / DESSERTS</h2>
+              <div class="eight columns">
+                <h1 class="size-40">Chocolate Pizza</h1>
+                <h2 class="size-14">POSTED ON 15 DEC 2013 / DESSERTS</h2>
               </div>    <!--END six.col-->
-              <div class="six columns">
-                <p class="right print" id="print"><span class="icon-printer"></span> PRINT</p>
+              <div class="four columns">
+                <p class="right print point size-10" id="print"><span class="icon-printer size-14"></span> PRINT</p>
               </div>    <!--END six.col-->
             </div>      <!--END row-->
             <div class="row">
@@ -88,47 +92,43 @@
               </div>    <!--END twelve.col-->
             </div>      <!--END row-->
             <div class="row">
-              <div class="twelve columns">
-                <section class="bodyp">
+              <div class="twelve columns bodyp size-14 justify">
                   <p>Bacon ipsum dolor amet salami tenderloin meatball bresaola, porchetta spare ribs short loin meatloaf brisket kevin landjaeger tri-tip t-bone. Turducken beef ribs drumstick, hamburger frankfurter short loin tongue brisket. Short loin ham hock ham sirloin pork ribeye chuck shankle. Shoulder biltong spare ribs pig venison short loin filet mignon tri-tip pork chop beef tenderloin. Landjaeger picanha fatback, chuck t-bone pancetta andouille pork belly ribeye tenderloin ball tip. Pork loin sirloin leberkas capicola tenderloin pork kevin rump.</p>
 
                   <p>Short loin pastrami pork belly meatball ham ball tip porchetta shoulder. Cupim turducken hamburger, andouille filet mignon tongue short loin corned beef pancetta. Pork belly spare ribs cow kevin, tongue short ribs chuck jowl capicola sausage corned beef doner shank. Tongue sirloin prosciutto short ribs cupim pastrami. Meatloaf ham pork alcatra capicola landjaeger. Tail chuck flank ham hock cupim shankle leberkas.</p>
 
                   <p>Pancetta turducken fatback cupim alcatra corned beef, ribeye pig tongue ham hock sirloin flank. Alcatra sausage doner spare ribs, turducken venison tri-tip meatloaf ham hock. Frankfurter alcatra pork belly picanha, spare ribs ball tip jowl beef ribs short ribs chuck hamburger turkey venison ribeye. Leberkas turducken venison, rump meatloaf strip steak ball tip chuck chicken kielbasa flank pig ribeye pork chop.</p>
-                </section>
               </div>    <!--END twelve.col-->
             </div>      <!--END row-->
             <div class="row">
-              <div class="twelve columns">
-                <section class="ingredback">
-                  <h2 class="hidden">Ingredients</h2>
-                  <form class="listleft">
-                    <input id="Option" type="checkbox" autocomplete="off"><label class="chk" for="Option">1 1/2 cups milk</label>
-                    <input id="Option2" type="checkbox" autocomplete="off"><label class="chk" for="Option2">1/2 cup mascarpone</label>
-                    <input id="Option3" type="checkbox" autocomplete="off"><label class="chk" for="Option3">1/2 tsp pink salt</label>
-                    <input id="Option4" type="checkbox" autocomplete="off"><label class="chk" for="Option4">1 lb Black Mission figs</label>
-                    <input id="Option5" type="checkbox" autocomplete="off"><label class="chk" for="Option5">1/2 cup brown sugar</label>
-                    <input id="Option6" type="checkbox" autocomplete="off"><label class="chk" for="Option6">2-4 tbsp water</label>
-                  </form>
-                  <form class="listright">
-                    <input id="Option7" type="checkbox" autocomplete="off"><label class="chk" for="Option7">1 1/2 cups heavy cream</label>
-                    <input id="Option8" type="checkbox" autocomplete="off"><label class="chk" for="Option8">1/3 cup granulated sugar</label>
-                    <input id="Option9" type="checkbox" autocomplete="off"><label class="chk" for="Option9">2 egg yolks</label>
-                    <input id="Option10" type="checkbox" autocomplete="off"><label class="chk" for="Option10">1 lemon, juiced</label>
-                    <input id="Option11" type="checkbox" autocomplete="off"><label class="chk" for="Option11">2 tbsp butter</label>
-                    <input id="Option12" type="checkbox" autocomplete="off"><label class="chk" for="Option12">1 cup honey roasted pecans, roughly chopped</label>
-                  </form>
-                </section>
+              <div class="twelve columns ingredback">
+                <h2 class="hidden">Ingredients</h2>
+                <form class="listleft block">
+                  <input id="Option" type="checkbox" autocomplete="off"><label class="chk point block" for="Option">1 1/2 cups milk</label>
+                  <input id="Option2" type="checkbox" autocomplete="off"><label class="chk point block" for="Option2">1/2 cup mascarpone</label>
+                  <input id="Option3" type="checkbox" autocomplete="off"><label class="chk point block" for="Option3">1/2 tsp pink salt</label>
+                  <input id="Option4" type="checkbox" autocomplete="off"><label class="chk point block" for="Option4">1 lb Black Mission figs</label>
+                  <input id="Option5" type="checkbox" autocomplete="off"><label class="chk point block" for="Option5">1/2 cup brown sugar</label>
+                  <input id="Option6" type="checkbox" autocomplete="off"><label class="chk point block" for="Option6">2-4 tbsp water</label>
+                </form>
+                <form class="listright">
+                  <input id="Option7" type="checkbox" autocomplete="off"><label class="chk point block" for="Option7">1 1/2 cups heavy cream</label>
+                  <input id="Option8" type="checkbox" autocomplete="off"><label class="chk point block" for="Option8">1/3 cup granulated sugar</label>
+                  <input id="Option9" type="checkbox" autocomplete="off"><label class="chk point block" for="Option9">2 egg yolks</label>
+                  <input id="Option10" type="checkbox" autocomplete="off"><label class="chk point block" for="Option10">1 lemon, juiced</label>
+                  <input id="Option11" type="checkbox" autocomplete="off"><label class="chk point block" for="Option11">2 tbsp butter</label>
+                  <input id="Option12" type="checkbox" autocomplete="off"><label class="chk point block" for="Option12">1 cup honey roasted pecans, roughly chopped</label>
+                </form>
               </div>    <!--END twelve.col-->
             </div>      <!--END row-->
 
             <div class="row">
               <div class="twelve columns">
-                <aside class="author_notes">
+                <aside class="author-notes dashed-border">
                   <img src="imgs/headshot.png" alt="vanessa headshot" class="left headshot">
-                  <h3>Vanessa Stevenson</h3>
-                  <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
-                  <a href="#" class="share">SHARE RECIPE</a>
+                  <h3 class="size-24">Vanessa Stevenson</h3>
+                  <p class="size-16">Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
+                  <a href="#" class="share point block size-14 center">SHARE RECIPE</a>
                 </aside>
               </div>    <!--END twelve.col-->
             </div>      <!--END row-->
@@ -139,9 +139,9 @@
         <footer class="pageFooter container">
           <div class="row">
             <div class="twelve columns">
-                <h2 class="hidden">Footer</h2><div class="footlogo"></div>
-                <p>Delicious &copy 2013 &middot All Rights Reserved.</p>
-                <p>Proudly published with Ghost.</p>
+                <h2 class="hidden">Footer</h2><div class="footlogo block"></div>
+                <p class="size-14 center">Delicious &copy 2013 &middot All Rights Reserved.</p>
+                <p class="size-14 center">Proudly published with Ghost.</p>
             </div>    <!--END twelve.col-->
           </div>      <!--END row-->
         </footer>

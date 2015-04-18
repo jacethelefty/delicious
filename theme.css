@@ -1,0 +1,41 @@
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2 {
+  color: #222222; }
+.soclist .soc_fb, .soclist .soc_tw, .soclist .soc_gg, .soclist .soc_in,
+.soclist .soc_fl, .soclist .soc_pi, .soclist .soc_rs, .soclist .soc_em {
+  background-color: #222222;
+  color: #FAFAFA;}
+.mainarticle h2 {
+  color: #CCCCCC; }
+.icon-printer, .print, .pageFooter, .pageFooter p {
+  color: #DDDDDD; }
+.mainarticle .bodyp p, .ingredback .listleft label, .ingredback .listright label{
+  color: #888888;
+}
+.author-notes h3, .author-notes p {
+  color: #555555; }
+.ingredback input[type=checkbox]:checked + .chk:before {
+  color: #555555; }
+.author-notes .share {
+  color: #FAFAFA;
+  background-color: #BC7058;}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.pageHeader h1{
+  font-family: "yellowtailregular";
+}
+h2, .print{
+  font-family: 'abelregular';
+  font-weight: 200;
+}
+.mainarticle h1{
+  font-family: 'oswaldbold';
+}
+.ingredback{
+  font-family: 'patrick_handregular';
+}
+.ingredback .listleft label, .ingredback .listright label  {
+  font-size: 16px;
+  line-height: 20px }
