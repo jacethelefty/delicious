@@ -1,0 +1,219 @@
+/*  Based from --> Foundation 5 _settings.scss */
+
+$white       : #FFFFFF;   /* true white 250, 250, 250 */
+$ghost       : #FAFAFA;   /* true white with hint of grey 250, 250, 250 */
+$vapor       : #F6F6F6;   /* 243, 243, 243 */
+$smoke       : #EEEEEE;   /* 238, 238, 238 */
+$gainsboro   : #DDDDDD;   /* 221, 221, 221 */
+$iron        : #CCCCCC;   /* 204, 204, 204 */
+$base        : #AAAAAA;   /* 170, 170, 170 */
+$jumbo       : #888888;   /* 136, 136, 136 */
+$charcoal    : #555555;   /* 85, 85, 85 */
+$jet         : #222222;   /* 34, 34, 34 */
+$black       : #000000;   /* true black 0, 0, 0 */
+
+.size-10 { font-size: 10px; }
+
+.size-12 { font-size: 12px; }
+
+.size-14 { font-size: 14px; }
+
+.size-16 { font-size: 16px; }   /* 1em */
+
+.size-18 { font-size: 18px; }
+
+.size-20 { font-size: 20px; }
+
+.size-24 { font-size: 24px; }   /* 1.5em */
+
+.size-32 { font-size: 32px; }   /* 2em */
+
+.size-36 { font-size: 36px; }
+
+.size-40 { font-size: 40px; }   /* 2.5em */
+
+.size-48 { font-size: 48px; }   /* 3em */
+
+h1, h2{
+  color: $jet;
+}
+.soclist{
+  width: 260px;
+  margin: 0 auto;
+  .soc_fb, .soc_tw, .soc_gg, .soc_in, .soc_fl, .soc_pi, .soc_rs, .soc_em{
+    background-color: $jet;
+    color: $ghost;
+    padding: 8px 7px 5px;
+    text-decoration: none;}
+}
+.mainarticle h2{
+  color: $iron;
+}
+.icon-printer, .print, .pageFooter, .pageFooter p{
+  color: $gainsboro;
+}
+.bodyp p{
+  color: $jumbo;
+}
+.listleft label, .listright label, .author-notes h3, .author-notes p{
+  color: $charcoal;
+}
+.ingredback input[type=checkbox]:checked + .chk:before {
+  color: $base;
+}
+.listleft label, .listright label{
+  font-size: 22px;
+}
+.share{
+  color: $ghost;
+}
+.pageHeader{
+  border: 13px solid #eeeeee;
+  border-width: 0px 0px 13px;
+  -moz-border-image: url(imgs/break.png) 0 0 13 repeat;
+  -webkit-border-image: url(imgs/break.png) 0 0 13 repeat;
+  -o-border-image: url(imgs/break.png) 0 0 13 repeat;
+  border-image: url(imgs/break.png) 0 0 13 fill repeat;
+  padding-bottom: 30px;
+    .logoarea{
+      width:260px;
+      margin: -10px auto 22px;
+      float: none;
+        .headlogo{
+          background: url('imgs/mastersprite.png') 0px 45px;
+          height:45px;
+          width:42px;
+          margin: 16px 4px 0 0;
+        }
+        h1{
+          margin: 16px -5px 3px 0;
+        }
+        h2{
+          margin: -15px 0 0 58px;
+        }
+  }
+}
+
+
+.mainarticle{
+  margin: 10px auto;
+  h1{
+    margin: 20px 0 0 2px;
+  }
+  h2{
+    margin: -3px 0 0px 4px;
+  }
+  .bodyp p {
+  text-indent: 30px;
+  line-height: 1.75em;
+  max-width: 100%;
+  margin: 20px auto;
+  text-align: justify; }
+  .bodyp p:nth-of-type(1) {
+    margin-top: 40px; }
+  .bodyp p:nth-of-type(3) {
+    margin-bottom: 40px;
+  }
+}
+
+.ingredback{
+  background: url('imgs/list-bg.png') no-repeat;
+  height:350px;
+  max-width: 100%;
+  border-top: 1px solid #EBEBDB;
+  position: relative;
+  .listleft label, .listright label{
+  line-height: 1.075em;
+  }
+  .listright label:last-of-type{
+    width: 75%;
+  }
+  .ingredback:after{
+    content: "";
+    background: #EBEBDB;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 83.25%;
+    width: 1px;
+  }
+  .listleft{
+    margin: 13px 0 0 60px;
+  }
+  .listright{
+    margin: 0 0 0 60px;
+  }
+  .chk {
+    font-size: 16px;
+    margin-right:10px;
+    line-height:18px;
+  }
+  .chk:nth-of-type(1){
+    margin-top: 3px;
+  }
+  input[type=checkbox] {
+    display:none;
+  }
+  .chk:before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    vertical-align:middle;
+    background-color: none;
+    color: #f3f3f3;
+    text-align: bottom;
+    border-radius: 2px;
+    border:1px solid #c3c3c3;
+    margin-right: 8px;
+    margin-top: -10px;
+  }
+  input[type=checkbox]:checked + .chk:before {
+    content: "\2713 ";
+    color: rgba(0,0,0,0.5);
+    font-size: 18px;
+    line-height: 0.5em;
+  }
+  input[type=checkbox]:checked + label{
+    text-decoration: line-through;
+  }
+}
+
+.author-notes{
+ width: 100%;
+ margin: 0 0 0 -13px;
+  .headshot{
+    margin: 40px 24px 70px;
+  }
+  h3{
+  margin: 40px 0 0 0;
+  }
+  .share{
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 14px;
+  padding: 13px 24px;
+  transition: all .5s ease-in;
+  text-indent: 0;
+  width: 106px;
+  font-weight: 200;
+  text-decoration: none;
+  margin: 40px auto 60px;
+  }
+}
+.pageFooter {
+  border-top: 1px solid;
+  .pageFooter p {
+    line-height: .25em;
+    text-align: center; }
+    .pageFooter p:last-of-type {
+      margin-bottom: 60px;}
+  .footlogo{
+  background: url('imgs/mastersprite.png') -42px 45px;
+  height:32px;
+  width:30px;
+  border: 4px solid #fff;
+  margin: -20px auto 0;
+  }
+}
+
+
