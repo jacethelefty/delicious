@@ -1,3 +1,9 @@
+.hidden{
+  display: none;
+}
+.point{
+  cursor: pointer;
+}
 .soclist a:hover{
   opacity: 0.6;
 }

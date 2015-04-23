@@ -102,8 +102,13 @@
 /* AUTHOR NOTES
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .author-notes {
-  width: 100%;
-  margin: 0 0 0 -13px; }
+  border: 13px solid;
+  border-width: 13px 0px 0px;
+  -moz-border-image: url(imgs/break.png) 13 0 0 repeat;
+  -webkit-border-image: url(imgs/break.png) 13 0 0 repeat;
+  -o-border-image: url(imgs/break.png) 13 0 0 repeat;
+  border-image: url(imgs/break.png) 13 0 0 fill repeat;
+  width: 100%; }
   .author-notes .headshot {
     margin: 56px 24px 70px; }
   .author-notes h3 {
