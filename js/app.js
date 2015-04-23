@@ -1,7 +1,9 @@
-  $('#print').click(function(){
+$('#print').click(function(){
     printFunction();
-  });
+});
 
 function printFunction() {
     window.print();
 }
+
+
