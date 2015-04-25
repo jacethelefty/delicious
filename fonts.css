@@ -54,11 +54,11 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @font-face {
   font-family: 'icomoon';
-  src:url('fonts/icomoon.eot?-vav97c');
-  src:url('fonts/icomoon.eot?#iefix-vav97c') format('embedded-opentype'),
-    url('fonts/icomoon.woff?-vav97c') format('woff'),
-    url('fonts/icomoon.ttf?-vav97c') format('truetype'),
-    url('fonts/icomoon.svg?-vav97c#icomoon') format('svg');
+  src:url('fonts/icomoon.eot?-3ahcas');
+  src:url('fonts/icomoon.eot?#iefix-3ahcas') format('embedded-opentype'),
+    url('fonts/icomoon.woff?-3ahcas') format('woff'),
+    url('fonts/icomoon.ttf?-3ahcas') format('truetype'),
+    url('fonts/icomoon.svg?-3ahcas#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -83,6 +83,14 @@
 
 .icon-printer:before {
   content: "\e954";
+}
+
+.icon-cross:before {
+  content: "\ea0f";
+}
+
+.icon-share2:before {
+  content: "\ea82";
 }
 
 .icon-google-plus:before {

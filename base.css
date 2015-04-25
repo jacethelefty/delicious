@@ -7,34 +7,11 @@ body{
 img{
   max-width: 100%;
 }
-.hidden{
-  display: none;
-}
-.point{
-  cursor: pointer;
-}
-.center{
-  text-align: center;
-}
-.justify{
-  text-align: justify;
-}
+
+
 header, main, footer{
   max-width: 900px;
   margin: 0 auto;
-}
-.block {
-  display: block;
-}
-.inblock, .chk:before {
-  display: inline-block;
-}
-.dashed-border{
-  border: 13px solid #eeeeee;
-  -moz-border-image: url(imgs/break.png) 13 0 0 repeat;
-  -webkit-border-image: url(imgs/break.png) 13 0 0 repeat;
-  -o-border-image: url(imgs/break.png) 13 0 0 repeat;
-  border-image: url(imgs/break.png) 13 0 0 fill repeat;
 }
 .size-10 {
   font-size: 10px; }
