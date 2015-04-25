@@ -1,3 +1,110 @@
+.tool{
+  text-align: center;
+}
+.ui-tooltip{
+  display: block;
+  border: 2px solid #000;
+  margin-bottom: 200px;
+  z-index: 100;
+  border-radius: 0px;
+}
+/* EMAIL SIGN-UP MODULE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.emailsignup{
+  position: fixed;
+  width: 100%;
+  max-width: 900px;
+  height:400px;
+  top: 50%;
+  left: 50%;
+  margin-top: -350px;
+  margin-left: -458px;
+  color:#000;
+  background-color: #fff;
+  border: 2px solid #000;
+  z-index: 100;
+  padding: 10px 10px 160px 0px;
+  opacity: 0.985;
+}
+.emailsignup h1{
+  margin-top: 80px;
+  text-align: center;
+  line-height: 2em;
+}
+.emailsignup #close{
+  float: right;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.emailsignup #close:hover{
+  opacity: 0.4;
+}
+.emailsignup h2{
+  text-align: center;
+  margin-bottom: 80px;
+  line-height: 2em;
+  color: #ddd;
+}
+.emailsignup h3{
+  text-align: center;
+  color:rgba(0,0,0,0.8);
+  }
+.emailsignup h3 input{
+  font-size: 2em;
+  text-align: center;
+  height: 54px;
+  color: #000;
+}
+.email{
+  height:40px;
+}
+#submit{
+  background-color: #000;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  width: 180px;
+  margin-top: 40px;
+  font-size: 1.5em;
+  padding: 6px 0 0 0;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+#submit:hover{
+  opacity: 0.8;
+}
+@media (max-width: 550px) {
+  .emailsignup{
+    top: 380px;
+    left:306px;
+    padding:10px 10px 10px 10px;
+    height: 500px;
+    max-width: 90%;
+  }
+  .emailsignup h1{
+    font-size: 1.5em;
+    line-height: 1.75em;
+    margin: 80px auto 0;
+    max-width: 84%;
+  }
+  .emailsignup h2{
+    line-height: 1em;
+  }
+  .emailsignup h3 input{
+  font-size: .85em;
+  text-align: center;
+  height: 34px;
+  }
+}
+@media (max-width: 1000px) {
+  .emailsignup{
+    margin-left: -300px;
+  }
+  #socBox{
+    display: none;
+  }
+}
+
 /*  Header MODULE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .pageHeader {
@@ -32,6 +139,31 @@
   .soclist .soc_fl, .soclist .soc_pi, .soclist .soc_rs, .soclist .soc_em {
     padding: 8px 7px 5px;
     text-decoration: none; }
+
+/* SHARE POP-OUT MODULE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#socBox{
+  position: fixed;
+  top: 200px;
+  left:-270px;
+  width: 300px;
+  height: 30px;
+  background-color: #000;
+  color:#fff;
+  z-index: 100;
+  cursor: pointer;
+}
+#socBox a{
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 5px 5px 5px;
+}
+#socBox a:hover{
+  opacity: 0.5;
+}
+#socBox a:last-of-type{
+  margin-right: 36px;
+}
 
 /* Main Body MODULE WITH AUTHOR NOTES AND INGREDIENTS LIST
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -98,12 +230,20 @@
     line-height: 0.5em; }
   .ingredback input[type=checkbox]:checked + label {
     text-decoration: line-through; }
+  form span{
+    color: #000;
+  }
 
 /* AUTHOR NOTES
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .author-notes {
-  width: 100%;
-  margin: 0 0 0 -13px; }
+  border: 13px solid;
+  border-width: 13px 0px 0px;
+  -moz-border-image: url(imgs/break.png) 13 0 0 repeat;
+  -webkit-border-image: url(imgs/break.png) 13 0 0 repeat;
+  -o-border-image: url(imgs/break.png) 13 0 0 repeat;
+  border-image: url(imgs/break.png) 13 0 0 fill repeat;
+  width: 100%; }
   .author-notes .headshot {
     margin: 56px 24px 70px; }
   .author-notes h3 {

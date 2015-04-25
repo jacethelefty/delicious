@@ -7,6 +7,8 @@
         <meta name="description" content="a blog about food">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="fonts.css">
         <link rel="stylesheet" href="base.css">
@@ -19,16 +21,59 @@
         <script src="js/modernizr.js"></script>
 
         <link rel="icon" type="image/png" href="imgs/favicon.png">
-
-        <style>
-
-        </style>
-
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+        <div class="emailsignup">
+          <span id="close">x</span>
+          <h1>Join the <span id="delic" class="size-48">Delicious</span> mailing list</h1>
+          <h2>so you can receive frequent updates about your favorite recipes!</h2>
+          <h3>
+            <input class="email" type="email" placeholder="Enter Email" size="25" autocomplete="off"><br>
+            <button id="submit">SUBMIT</button>
+          </h3>
+        </div>
+
+        <div id="socBox">
+          <a href="facebook.com" class="soc_fb inblock">
+            <span class="icon-facebook">
+            </span>
+          </a>
+          <a href="twitter.com" class="soc_tw inblock">
+            <span class="icon-twitter">
+            </span>
+          </a>
+          <a href="googleplus.com" class="soc_gg inblock">
+            <span class="icon-google-plus">
+            </span>
+          </a>
+          <a href="instagram.com" class="soc_in inblock">
+            <span class="icon-instagram">
+            </span>
+          </a>
+          <a href="flickr.com" class="soc_fl inblock">
+            <span class="icon-flickr3">
+            </span>
+          </a>
+          <a href="pinterest.com" class="soc_pi inblock">
+            <span class="icon-pinterest2">
+            </span>                    </a>
+          <a href="blogger.com" class="soc_rs inblock">
+              <span class="icon-feed2">
+            </span>
+          </a>
+          <a href="mailto:vanessa@delicious.com?Subject=I%20love%20your%20recipes" target="_top" class="soc_em inblock">
+            <span class="icon-envelop">
+            </span>
+          </a>
+          <span class="soc_sh inblock" title="Open to Share!">
+            <span class="icon-share2">
+            </span>
+          </span>
+        </div>
 
         <header class="pageHeader container">
             <div class="row box">
@@ -83,7 +128,7 @@
                 <h2 class="size-14">POSTED ON 15 DEC 2013 / DESSERTS</h2>
               </div>    <!--END six.col-->
               <div class="four columns">
-                <p class="right print point size-10" id="print"><span class="icon-printer size-14"></span> PRINT</p>
+                <p class="right print point size-10" id="print" title="Print for later!"><span class="icon-printer size-14"></span> PRINT</p>
               </div>    <!--END six.col-->
             </div>      <!--END row-->
             <div class="row">
@@ -101,30 +146,30 @@
               </div>    <!--END twelve.col-->
             </div>      <!--END row-->
             <div class="row">
-              <div class="twelve columns ingredback">
+              <div class="twelve columns ingredback" title="Click on any of the items to check off your list! Hover over the highlighted text for extra tips and photos!">
                 <h2 class="hidden">Ingredients</h2>
                 <form class="listleft block">
                   <input id="Option" type="checkbox" autocomplete="off"><label class="chk point block" for="Option">1 1/2 cups milk</label>
-                  <input id="Option2" type="checkbox" autocomplete="off"><label class="chk point block" for="Option2">1/2 cup mascarpone</label>
-                  <input id="Option3" type="checkbox" autocomplete="off"><label class="chk point block" for="Option3">1/2 tsp pink salt</label>
-                  <input id="Option4" type="checkbox" autocomplete="off"><label class="chk point block" for="Option4">1 lb Black Mission figs</label>
+                  <input id="Option2" type="checkbox" autocomplete="off"><label class="chk point block" for="Option2" title="">1/2 cup <span id="mascarpone">mascarpone</span></label>
+                  <input id="Option3" type="checkbox" autocomplete="off"><label class="chk point block" for="Option3">1/2 tsp <span id="salt" class="tooltip" title="">pink salt</span></label>
+                  <input id="Option4" type="checkbox" autocomplete="off"><label class="chk point block" for="Option4">1 lb <span id="fig" class="tooltip" title="You should get big juicy ones!">Black Mission</span> figs</label>
                   <input id="Option5" type="checkbox" autocomplete="off"><label class="chk point block" for="Option5">1/2 cup brown sugar</label>
                   <input id="Option6" type="checkbox" autocomplete="off"><label class="chk point block" for="Option6">2-4 tbsp water</label>
                 </form>
                 <form class="listright">
-                  <input id="Option7" type="checkbox" autocomplete="off"><label class="chk point block" for="Option7">1 1/2 cups heavy cream</label>
+                  <input id="Option7" type="checkbox" autocomplete="off"><label class="chk point block" for="Option7">1 1/2 cups <span id="cream" class="tooltip" title="">heavy cream</span></label>
                   <input id="Option8" type="checkbox" autocomplete="off"><label class="chk point block" for="Option8">1/3 cup granulated sugar</label>
                   <input id="Option9" type="checkbox" autocomplete="off"><label class="chk point block" for="Option9">2 egg yolks</label>
-                  <input id="Option10" type="checkbox" autocomplete="off"><label class="chk point block" for="Option10">1 lemon, juiced</label>
+                  <input id="Option10" type="checkbox" autocomplete="off"><label class="chk point block" for="Option10">1 <span id="lemon" class="tooltip" title="yumm">lemon, juiced</span></label>
                   <input id="Option11" type="checkbox" autocomplete="off"><label class="chk point block" for="Option11">2 tbsp butter</label>
-                  <input id="Option12" type="checkbox" autocomplete="off"><label class="chk point block" for="Option12">1 cup honey roasted pecans, roughly chopped</label>
+                  <input id="Option12" type="checkbox" autocomplete="off"><label class="chk point block" for="Option12">1 cup honey roasted pecans, <span id="roughChop" class="tooltip" title="The chumkier the better!">roughly chopped</span></label>
                 </form>
               </div>    <!--END twelve.col-->
             </div>      <!--END row-->
 
             <div class="row">
               <div class="twelve columns">
-                <aside class="author-notes dashed-border">
+                <aside class="author-notes">
                   <img src="imgs/headshot.png" alt="vanessa headshot" class="left headshot">
                   <h3 class="size-24">Vanessa Stevenson</h3>
                   <p class="size-16">Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
@@ -147,6 +192,7 @@
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 
         <script src="js/app.js"></script>

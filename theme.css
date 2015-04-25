@@ -23,14 +23,14 @@ h1, h2 {
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.pageHeader h1{
+.pageHeader h1, #delic{
   font-family: "yellowtailregular";
 }
 h2, .print{
   font-family: 'abelregular';
   font-weight: 200;
 }
-.mainarticle h1{
+.mainarticle h1, #submit{
   font-family: 'oswaldbold';
 }
 .ingredback{
